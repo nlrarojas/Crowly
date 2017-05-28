@@ -1,4 +1,4 @@
-package crowly.library;
+package library;
 
 import java.util.Date;
 import java.util.UUID;
@@ -38,7 +38,7 @@ public class Cuerpo {
 	}
 
 	public void setTime(Date time) {
-		this.Time = Time;
+		this.Time = time;
 	}
 
 	public UUID getId() {

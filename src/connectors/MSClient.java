@@ -1,8 +1,7 @@
-package crowly.connectors;
+package connectors;
 
 import java.util.ArrayList;
-
-import crowly.library.*;
+import library.*;
 
 public class MSClient implements IConstants
 {

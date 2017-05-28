@@ -1,4 +1,4 @@
-package crowly.connectors;
+package connectors;
 
 import java.net.URI;
 import org.apache.http.HttpEntity;
@@ -11,8 +11,8 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
-import crowly.library.IConstants;
-import crowly.library.VideoResponse;
+import library.IConstants;
+import library.VideoResponse;
 
 public class HttpRequestor implements IConstants
 {

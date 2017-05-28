@@ -1,11 +1,10 @@
-package crowly;
+package model;
 
 import java.util.ArrayList;
-
-import crowly.connectors.MSClient;
-import crowly.library.Cuerpo;
-import crowly.library.IConstants;
-import crowly.library.VideoResponse;
+import connectors.MSClient;
+import library.Cuerpo;
+import library.IConstants;
+import library.VideoResponse;
 
 public class VideoProcesor implements IConstants
 {

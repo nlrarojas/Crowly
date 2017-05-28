@@ -1,4 +1,4 @@
-package crowly.library;
+package library;
 
 public class VideoResponse {
 	private String VideoResponseURL;
