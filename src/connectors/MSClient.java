@@ -1,7 +1,10 @@
 package connectors;
 
 import java.util.ArrayList;
-import library.*;
+
+import library.Cuerpo;
+import library.IConstants;
+import library.VideoResponse;
 
 public class MSClient implements IConstants
 {
@@ -26,7 +29,10 @@ public class MSClient implements IConstants
 	{
 		// puedo tener el URL hardcoded y aqui armo el PayLoad
 		String payload = POST_BODY.replace("@@URL@@", pURLVideo);
+
 		VideoResponse videoResp = HttpRequestor.post(MCS_URL, payload, MCS_IDKEY);
+		System.out.println(videoResp.getContent());
+		
 		if (videoResp!=null)
 		{
 			VideosPendientes.add(videoResp);

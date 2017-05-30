@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+
 import connectors.MSClient;
 import library.Cuerpo;
 import library.IConstants;
@@ -24,9 +25,9 @@ public class VideoProcesor implements IConstants
 				MsClient.procesarVideo(urlVideo);
 				Thread.sleep(ESPERA_ENTRE_LLAMADAS);
 			}
-			
+			System.out.println("c");
 			Thread.sleep(60000);
-			
+			System.out.println("d");
 			for(VideoResponse video : MsClient.getVideosPendientes()) {
 				MsClient.procesarRespuestaVideo(video);
 				Thread.sleep(ESPERA_ENTRE_LLAMADAS);
@@ -37,11 +38,5 @@ public class VideoProcesor implements IConstants
 		{
 			ex.printStackTrace();
 		}
-	}
-	
-	public static void main(String args[])
-	{
-		VideoProcesor proc = new VideoProcesor();
-		proc.analizarVideos();
 	}
 }
